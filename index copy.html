@@ -1,3 +1,9 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -9,6 +15,7 @@
       type="text/css"
       media="all"
     />
+    <!-- web-font -->
     <link
       href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,700,800,400,600"
       rel="stylesheet"
@@ -24,6 +31,8 @@
       rel="stylesheet"
       type="text/css"
     />
+    <!-- web-font -->
+    <!-- js -->
     <script src="js/jquery.min.js"></script>
     <meta
       name="viewport"
@@ -32,19 +41,59 @@
     <script type="application/x-javascript">
       addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
     </script>
+    <!-- js -->
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+          event.preventDefault();
+          $("html,body").animate(
+            { scrollTop: $(this.hash).offset().top },
+            1000
+          );
+        });
+      });
+    </script>
+    <!-- start-smoth-scrolling -->
   </head>
   <body>
+    <!-- header -->
     <div id="home" class="header">
+      <!-- container -->
       <div class="container">
         <div class="header-logo">
+          <!-- <h1><a href="#">TEMBANG <span>Jawa</span></a></h1> -->
           <img src="./images/umuzi.png" />
         </div>
         <div class="top-nav">
           <img src="./images/BBD.png" />
-          </div>
+          <!-- <p>You are not Logged in, <a class="Signup play-icon popup-with-zoom-anim" href="#small-dialog3">Log in here </a>   or<span> <a class="Signup play-icon popup-with-zoom-anim" href="#small-dialog2">Register</a></P> -->
+        </div>
         <div class="clearfix"></div>
-         <script src="js/responsiveslides.min.js"></script>
-        
+        <!-- banner Slider starts Here -->
+        <script src="js/responsiveslides.min.js"></script>
+        <script>
+          // You can also use "$(window).load(function() {"
+        //   $(function () {
+        //     // Slideshow 4
+        //     $("#slider4").responsiveSlides({
+        //       auto: true,
+        //       pager: true,
+        //       nav: false,
+        //       speed: 500,
+        //       namespace: "callbacks",
+        //       before: function () {
+        //         $(".events").append("<li>before event fired.</li>");
+        //       },
+        //       after: function () {
+        //         $(".events").append("<li>after event fired.</li>");
+        //       },
+        //     });
+        //   });
+        </script>
+        <!--//End-slider-script -->
         <div id="top" class="callbacks_container">
           <ul class="rslides" id="slider4">
             <li>
@@ -55,10 +104,48 @@
                 </p>
                 <div class="red">04 AUGUST 2025</div>
                 <p>09:00 - 14:00</p>
-                </div>
+                <!-- <div class="button"><a href="#">View Here</a></div> -->
+              </div>
             </li>
+            <!-- <li>
+							<div class="header-info">
+								<p>LIVE TELECAST</p>
+								<p>BY<span>TEMBANG</span><span class="sub-text">Jawa</span></p>
+								<p>	AT WASHINGTON DC</p>
+								<div class="red">24 OCTOMER 2014</div>
+								<div class="button"><a href="#">View Here</a></div>
+							</div>
+						</li> -->
+            <!-- <li>
+							<div class="header-info">
+								<p>LIVE DANCE SHOW</p>
+								<p>BY<span>TEMBANG</span><span class="sub-text">Jawa</span></p>
+								<p>	AT NEW YORK</p>
+								<div class="red">15 JANUARY 2013</div>
+								<div class="button"><a href="#">View Here</a></div>
+							</div>
+						</li>
+						<li>
+							<div class="header-info">
+								<p>LIVE TELECAST</p>
+								<p>BY<span>TEMBANG</span><span class="sub-text">Jawa</span></p>
+								<p>	AT WASHINGTON DC</p>
+								<div class="red">24 OCTOMER 2014</div>
+								<div class="button"><a href="#">View Here</a></div>
+							</div>
+						</li>
+						<li>
+							<div class="header-info">
+								<p>LIVE DANCE SHOW</p>
+								<p>BY<span>TEMBANG</span><span class="sub-text">Jawa</span></p>
+								<p>	AT NEW YORK</p>
+								<div class="red">15 JANUARY 2013</div>
+								<div class="button"><a href="#">View Here</a></div>
+							</div>
+						</li> -->
           </ul>
           <div class="clearfix"></div>
+          <!-- banner Slider Ends Here -->
         </div>
       </div>
       <!-- container -->
