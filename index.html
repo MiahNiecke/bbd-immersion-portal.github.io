@@ -487,6 +487,15 @@
           <div class="col-md-6">
             <form>
               <textarea
+                value="Dietary restrictions:"
+                onfocus="if(this.value == 'Dietary restrictions') this.value='';"
+                onblur="if(this.value == '') this.value='Dietary restrictions';"
+              >
+Dietary restrictions</textarea
+              >
+            </form>
+            <form>
+              <textarea
                 value="Message:"
                 onfocus="if(this.value == 'Message') this.value='';"
                 onblur="if(this.value == '') this.value='Message';"
