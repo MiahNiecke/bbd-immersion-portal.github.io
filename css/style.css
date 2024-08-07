@@ -10,6 +10,29 @@ body {
   font-family: "Open Sans", sans-serif;
   background: #fff;
 }
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-content p {
+  flex: 1;
+  max-width: 600px;
+}
+
+.gallery-images {
+  display: flex;
+  gap: 10px;
+}
+
+.gallery-images img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+
 .header {
   background: url(../images/black-white-bg.jpg) no-repeat 0px 0px;
   background-size: cover;
