@@ -2,6 +2,76 @@ html,
 body {
   font-family: "Open Sans", sans-serif;
   background: #fff;
+  margin: 0;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+textarea {
+  overflow: auto;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+img {
+  vertical-align: middle;
+  width: 200px;
+  /* height: 120px; */
+}
+
+h3 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container:before,
+.container:after {
+  display: table;
+  content: " ";
+}
+
+.container:after {
+  clear: both;
+}
+
+.col-md-6,
+.col-md-7,
+.col-md-8 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+input[type="submit"].btn-block {
+  width: 100%;
 }
 
 .about-content {
