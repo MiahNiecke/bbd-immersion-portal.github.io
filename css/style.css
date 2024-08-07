@@ -29,8 +29,7 @@ textarea {
 
 img {
   vertical-align: middle;
-  width: 200px;
-  /* height: 120px; */
+  width: 100%;
 }
 
 h3 {
@@ -72,29 +71,6 @@ p {
 
 input[type="submit"].btn-block {
   width: 100%;
-}
-
-.about-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 20px;
-}
-
-.about-content p {
-  flex: 1;
-  max-width: 600px;
-}
-
-.gallery-images {
-  display: flex;
-  gap: 10px;
-}
-
-.gallery-images img {
-  width: 100px;
-  height: auto;
-  border-radius: 5px;
 }
 
 .header {
@@ -203,29 +179,38 @@ input[type="submit"].btn-block {
   border-bottom: 1px solid #cccccc;
 }
 
+.about p {
+  font-size: 1.4em;
+  color: #666;
+  line-height: 1.8em;
+  margin-bottom: 40px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery-image {
+  flex: 1 1 calc(33.333% - 20px);
+  margin: 10px;
+  box-sizing: border-box;
+}
+
 .gallery-image img {
   width: 100%;
-}
-
-.gallery-image {
-  width: 31.7%;
-  float: left;
-  margin: 1.5em 1.2em 0 0;
-}
-
-.gallery-image {
-  position: relative;
-  cursor: pointer;
-}
-
-/* .gallery-image:hover div.caption {
+  height: auto;
   display: block;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  border-radius: 5px;
 }
- */
+
 .contact {
   margin: 0 0 6em 0;
 }
