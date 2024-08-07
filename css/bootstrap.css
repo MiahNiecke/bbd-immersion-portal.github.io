@@ -76,6 +76,8 @@ a:focus {
 
 img {
   vertical-align: middle;
+  width: 200px;
+  height: 120px;
 }
 
 h3 {
