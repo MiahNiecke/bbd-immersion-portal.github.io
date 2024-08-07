@@ -119,57 +119,54 @@
       </div>
        <!-- End map -->
 
-    <div id="contact" class="contact">
-      <div class="container">
-        <h3>RSVP :)</h3>
-        <div class="col-md-7">
-          <div class="col-md-6">
-            <form>
-              <input
-                type="text"
-                class="text"
-                value="Name"
-                onfocus="this.value = '';"
-                onblur="if (this.value == '') {this.value = 'Name';}"
-              />
-              <input
-                type="text"
-                class="text"
-                value="Email"
-                onfocus="this.value = '';"
-                onblur="if (this.value == '') {this.value = 'Email';}"
-              />
-            </form>
-          </div>
-          <div class="col-md-6">
-            <form>
-              <textarea
-                value="Message:"
-                onfocus="if(this.value == 'Message') this.value='';"
-                onblur="if(this.value == '') this.value='Message';"
-              >
-Message</textarea
-              >
-            </form>
-            <form>
-              <textarea
-                value="Please list any dietary restrictions:"
-                onfocus="if(this.value == 'Please list any dietary restrictions') this.value='';"
-                onblur="if(this.value == '') this.value='Please list any dietary restrictions';"
-              >
-Please list any dietary restrictions</textarea
-              >
-            </form>
-          </div>
-          <div class="submit-button">
-            <form>
-              <input type="submit" value="SEND" />
+       <div id="contact" class="contact">
+        <div class="container">
+          <h3>RSVP :)</h3>
+          <div class="col-md-7">
+            <form id="rsvpForm">
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  id="name"
+                  class="text"
+                  value="Name"
+                  placeholder="Name"
+                  onfocus="this.value = '';"
+                  onblur="if (this.value == '') {this.value = 'Name';}"
+                />
+                <input
+                  type="text"
+                  id="email"
+                  class="text"
+                  value="Email"
+                  placeholder="Email"
+                  onfocus="this.value = '';"
+                  onblur="if (this.value == '') {this.value = 'Email';}"
+                />
+              </div>
+              <div class="col-md-6">
+                <textarea
+                  id="message"
+                  value="Message:"
+                  placeholder="Message"
+                  onfocus="if(this.value == 'Message') this.value='';"
+                  onblur="if(this.value == '') this.value='Message';"
+                >Message</textarea>
+                <textarea
+                  id="dietary"
+                  value="Please list any dietary restrictions:"
+                  placeholder="Please list any dietary restrictions:"
+                  onfocus="if(this.value == 'Please list any dietary restrictions') this.value='';"
+                  onblur="if(this.value == '') this.value='Please list any dietary restrictions';"
+                >Please list any dietary restrictions</textarea>
+              </div>
+              <div class="submit-button">
+                <input type="submit" value="SEND" />
+              </div>
             </form>
           </div>
         </div>
       </div>
-
-    </div>
   
     <div class="border-bottom"></div>
 
@@ -209,5 +206,6 @@ Please list any dietary restrictions</textarea
     <a href="#" id="toTop" style="display: block">
       <span id="toTopHover" style="opacity: 1"> </span
     ></a>
+    <script src="js/validate_form.js"></script>
   </body>
 </html>
