@@ -60,17 +60,12 @@ p {
   clear: both;
 }
 
-.col-md-6,
-.col-md-7,
-.col-md-8 {
+.form-exterior,
+.form-split {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-}
-
-input[type="submit"].btn-block {
-  width: 100%;
 }
 
 .header {
@@ -117,34 +112,19 @@ input[type="submit"].btn-block {
   font-weight: 800;
 }
 
-.callbacks_container {
+.banner-container {
   position: relative;
   float: left;
   width: 100%;
 }
 
-.rslides {
+.banner-text {
   position: relative;
   list-style: none;
   overflow: hidden;
   width: 100%;
   padding: 0;
   margin: 0;
-}
-
-.rslides li {
-  -webkit-backface-visibility: hidden;
-  position: absolute;
-  display: none;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
-
-.rslides li {
-  position: relative;
-  display: block;
-  float: left;
 }
 
 .about {
@@ -156,12 +136,6 @@ input[type="submit"].btn-block {
   font-weight: 700;
   color: #000000;
   margin: 0.5em 0;
-}
-
-.border {
-  width: 70%;
-  border-bottom: 1px solid #cccccc;
-  position: relative;
 }
 
 .map {
@@ -207,11 +181,11 @@ input[type="submit"].btn-block {
   border-radius: 5px;
 }
 
-.contact {
+.rsvp-form {
   margin: 0 0 6em 0;
 }
 
-.contact h3 {
+.rsvp-form h3 {
   font-size: 39px;
   font-weight: 700;
   color: #000000;

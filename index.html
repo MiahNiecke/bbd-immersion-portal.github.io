@@ -36,8 +36,8 @@
         <div class="top-nav">
           <img src="./images/bbd-logo.png" />
           </div>
-        <div id="top" class="callbacks_container">
-          <ul class="rslides">
+        <div id="top" class="banner-container">
+          <ul class="banner-text">
             <li>
               <div class="header-info">
                 <p>Umuzi x BBD Immersion Day</p>
@@ -54,7 +54,6 @@
     </div>
     </div>
     <div id="about" class="about">
-      <div class="border"></div>
       <div id="about" class="about">
         <div class="container">
           <h3>What is the Immersion Day?</h3>
@@ -105,7 +104,6 @@
         </div>
       </div>
 
-      <!-- Map -->
       <div class="map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14326.36878943439!2d28.0421778!3d-26.1448364!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950da0094d9a3f%3A0x7bc5daf14ad1e246!2sBBD%20-%20Johannesburg!5e0!3m2!1sen!2sza!4v1722972798890!5m2!1sen!2sza"
@@ -117,14 +115,13 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-       <!-- End map -->
 
-       <div id="contact" class="contact">
+       <div id="rsvp-form" class="rsvp-form">
         <div class="container">
           <h3>RSVP </h3>
-          <div class="col-md-7">
+          <div class="form-exterior">
             <form id="rsvpForm">
-              <div class="col-md-6">
+              <div class="form-split">
                 <input
                   type="text"
                   id="name"
@@ -144,7 +141,7 @@
                   onblur="if (this.value == '') {this.value = 'Email';}"
                 />
               </div>
-              <div class="col-md-6">
+              <div class="form-split">
                 <textarea
                   id="message"
                   value="Message:"
